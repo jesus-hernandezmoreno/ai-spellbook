@@ -6,7 +6,7 @@ Discover a trove of arcane prompts, each one a magical formula infused with the 
 
 ## Demo
 
-https://ai-spellbook-gold.vercel.app/
+https://ai-spellbook.vercel.app/
 
 Desktop:
 
