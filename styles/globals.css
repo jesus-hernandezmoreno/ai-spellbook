@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Joystix';
+  src: url('/fonts/joystix/joystix monospace.eot');
+  src: local('☺'), url('/fonts/joystix/joystix monospace.woff') format('woff'),
+    url('/fonts/joystix/joystix monospace.ttf') format('truetype'),
+    url('/fonts/joystix/joystix monospace.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** Game Over **/
+@font-face {
+  font-family: 'SF Pixelate';
+  src: url('/fonts/sf_pixelate/sf_pixelate.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+
+html {
+  background: #232c35;
+}
+
+/* Tailwind Styles */
+
+.primary_button {
+  @apply rounded-full border border-[#18212a] bg-[#18212a] py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-pixelate flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl text-center font-joystix;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-white sm:text-xl max-w-2xl font-pixelate;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
