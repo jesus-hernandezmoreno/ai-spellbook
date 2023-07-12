@@ -26,7 +26,7 @@ const UpdatePrompt = () => {
     if (promptId) getPromptDetails();
   }, [promptId]);
 
-  const updatePrompt = async (e) => {
+  const updatePrompt = async (e: React.SyntheticEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 

@@ -23,9 +23,11 @@ I'm excited to learn the new changes on NextJS 13 and the new trends like Tailwi
 ## Tech Stack:
 
 - NextJS 13
+- Next Auth
 - React.
 - Typescript.
 - Tailwind CSS.
+- MongoDB
 
 ## Getting Started
 

@@ -5,8 +5,8 @@ type ProfileProps = {
   name: string;
   desc: string;
   data: Post[];
-  handleEdit: (post: Post) => {};
-  handleDelete: (post: Post) => {};
+  handleEdit?: (post: Post) => void;
+  handleDelete?: (post: Post) => void;
 };
 
 const Profile = ({ name, desc, data, handleEdit, handleDelete }: ProfileProps) => {

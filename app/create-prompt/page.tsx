@@ -7,12 +7,12 @@ import { Form } from '@components';
 
 const CreatePrompt = () => {
   const router = useRouter();
-  const { data: session } = useSession();
+  const { data: session } = useSession() as any;
 
   const [submitting, setIsSubmitting] = useState(false);
   const [post, setPost] = useState({ prompt: '', tag: '' });
 
-  const createPrompt = async (e) => {
+  const createPrompt = async (e: React.SyntheticEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 

@@ -12,7 +12,7 @@ export type UserProfileProps = {
 
 const UserProfile = ({ params }: UserProfileProps) => {
   const searchParams = useSearchParams();
-  const userName = searchParams.get('name');
+  const userName = searchParams.get('name') || 'name';
 
   const [userPosts, setUserPosts] = useState([]);
 

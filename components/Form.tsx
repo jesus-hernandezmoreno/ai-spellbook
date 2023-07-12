@@ -1,13 +1,12 @@
 import { Post } from '@types';
 import Link from 'next/link';
-import { ChangeEvent } from 'react';
 
 type FormProps = {
   type: string;
   post: Post;
   setPost?: (value: any) => void;
   submitting: boolean;
-  handleSubmit: (e: ChangeEvent<HTMLTextAreaElement>) => void;
+  handleSubmit: (event: React.SyntheticEvent) => void;
 };
 
 const Form = ({ type, post, setPost, submitting, handleSubmit }: FormProps) => {
@@ -30,7 +29,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }: FormProps) => {
 
           <textarea
             value={post.prompt}
-            onChange={(e) => setPost({ ...post, prompt: e.target.value })}
+            onChange={(e) => setPost?.({ ...post, prompt: e.target.value })}
             placeholder="Write your post here"
             required
             className="w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-white  bg-[#13181e] outline-0 font-pixelate"
@@ -44,7 +43,7 @@ const Form = ({ type, post, setPost, submitting, handleSubmit }: FormProps) => {
           </span>
           <input
             value={post.tag}
-            onChange={(e) => setPost({ ...post, tag: e.target.value })}
+            onChange={(e) => setPost?.({ ...post, tag: e.target.value })}
             type="text"
             placeholder="#Tag"
             required
